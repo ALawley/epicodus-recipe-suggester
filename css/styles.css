@@ -1,0 +1,22 @@
+#main-navbar ul.navbar-right {
+  padding-right: 30px;
+}
+
+.jumbotron h1 {
+  text-align: center;
+}
+
+#page-description p {
+  text-align: center;
+}
+
+.form-group label {
+  font-style: italic;
+}
+
+#result-box {
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
