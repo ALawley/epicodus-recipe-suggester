@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <title>Recipe Suggester</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Home</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Tips</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <h1>Bottom Shelf Chef</h1>
+    </div>
+    <!-- page description -->
+    <div class="container">
+      <div class="row" id="page-description">
+        <p>This is information about this site and how to use it.</p>
+      </div>
+      <!-- dropdown selectors -->
+      <div class="row">
+        <form id="ingredient-selectors">
+          <h2>Select Your Ingredients:</h2>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label>Meat:</label>
+              <select class="form-control" id="meat">
+                <option>Beef</option>
+                <option>Chicken</option>
+                <option>Pork</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Vegetables:</label>
+              <select class="form-control" id="vegetables">
+                <option>Spinach</option>
+                <option>Carrots</option>
+                <option>Mushrooms</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label>Liquid:</label>
+              <select class="form-control" id="liquid">
+                <option>Water</option>
+                <option>Milk</option>
+                <option>Soy Sauce</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Fruits:</label>
+              <select class="form-control" id="fruits">
+                <option>Apples</option>
+                <option>Oranges</option>
+                <option>Mushrooms</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label>Dry Goods:</label>
+              <select class="form-control" id="dry-goods">
+                <option>Rice</option>
+                <option>Pasta</option>
+                <option>Grain</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Bakery</label>
+              <select class="form-control" id="bakery">
+                <option>Rolls</option>
+                <option>Croutons</option>
+                <option>Sliced Bread</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- results -->
+
+    </div>
+  </body>
+</html>
