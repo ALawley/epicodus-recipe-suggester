@@ -42,41 +42,150 @@
       </div>
       <!-- dropdown selectors -->
       <div class="row">
-        <div class="col-sm-4">
-          <h2>Hello</h2>
+        <h2>Select Your Ingredients:</h2>
+        <div class="col-xs-4">
+          <!-- ingredient 1 -->
           <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <span class="selected-ingredient">Select an ingredient</span>
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span id="selected-ingredient1">Select</span>
               <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu" id="ingredient1">
+            <ul class="dropdown-menu">
+              <!-- meat selections -->
               <li class="dropdown-header">Meat</li>
-              <li value="Beef"><a href="#">Beef</a></li>
-              <li value="Chicken"><a href="#">Chicken</a></li>
-              <li value="Pork"><a href="#">Pork</a></li>
+              <li class="ingredient1" value="Beef"><a>Beef</a></li>
+              <li class="ingredient1" value="Chicken"><a>Chicken</a></li>
+              <li class="ingredient1" value="Pork"><a>Pork</a></li>
+              <!-- vegetable selections -->
               <li class="dropdown-header">Vegetable</li>
-              <li value="Leafy Greens"><a href="#">Leafy Greens</a></li>
-              <li value="Carrots"><a href="#">Carrots</a></li>
-              <li value="Squash"><a href="#">Squash</a></li>
-              <li value="Green Beans"><a href="#">Green Beans</a></li>
-              <li value="Mushrooms"><a href="#">Mushrooms</a></li>
+              <li class="ingredient1" value="Leafy Greens"><a>Leafy Greens</a></li>
+              <li class="ingredient1" value="Carrots"><a>Carrots</a></li>
+              <li class="ingredient1" value="Squash"><a>Squash</a></li>
+              <li class="ingredient1" value="Green Beans"><a>Green Beans</a></li>
+              <li class="ingredient1" value="Mushrooms"><a>Mushrooms</a></li>
+              <li class="ingredient1" value="Green Onions"><a>Green Onions</a></li>
+              <li class="ingredient1" value="Tomatoes"><a>Tomatoes</a></li>
+              <!-- liquid selections -->
+              <li class="dropdown-header">Liquids</li>
+              <li class="ingredient1" value="Water"><a>Water</a></li>
+              <li class="ingredient1" value="Milk"><a>Milk</a></li>
+              <li class="ingredient1" value="Wine"><a>Wine</a></li>
+              <li class="ingredient1" value="Soy Sauce"><a>Soy Sauce</a></li>
+              <!-- dry good selections -->
+              <li class="dropdown-header">Dry Goods</li>
+              <li class="ingredient1" value="Rice"><a>Rice</a></li>
+              <li class="ingredient1" value="Pasta"><a>Pasta</a></li>
+              <li class="ingredient1" value="Grain"><a>Grain</a></li>
+              <!-- fruit selections -->
+              <li class="dropdown-header">Fruits</li>
+              <li class="ingredient1" value="Apples"><a>Apples</a></li>
+              <li class="ingredient1" value="Oranges"><a>Oranges</a></li>
+              <li class="ingredient1" value="Bananas"><a>Bananas</a></li>
+              <li class="ingredient1" value="Pears"><a>Pears</a></li>
+              <!-- bakery selections -->
+              <li class="dropdown-header">Bakery</li>
+              <li class="ingredient1" value="Rolls"><a>Rolls</a></li>
+              <li class="ingredient1" value="Sliced Bread"><a>Sliced Bread</a></li>
+              <li class="ingredient1" value="Croutons"><a>Croutons</a></li>
             </ul>
           </div>
         </div>
-        <!-- <div class="col-sm-6">
-          <form>
-            <div class="form-group">
-              <select class="form-control">
-                <option>Beef</option>
-                <option>Chicken</option>
-                <option>Pork</option>
-                <option>Leafy Greens</option>
-                <option>Carrots</option>
-                <option>Squash</option>
-              </select>
-            </div>
-          </form>
-        </div> -->
+
+        <div class="col-xs-4">
+          <!-- ingredient 2 -->
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span id="selected-ingredient2">Select</span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- meat selections -->
+              <li class="dropdown-header">Meat</li>
+              <li class="ingredient2" value="Beef"><a>Beef</a></li>
+              <li class="ingredient2" value="Chicken"><a>Chicken</a></li>
+              <li class="ingredient2" value="Pork"><a>Pork</a></li>
+              <!-- vegetable selections -->
+              <li class="dropdown-header">Vegetable</li>
+              <li class="ingredient2" value="Leafy Greens"><a>Leafy Greens</a></li>
+              <li class="ingredient2" value="Carrots"><a>Carrots</a></li>
+              <li class="ingredient2" value="Squash"><a>Squash</a></li>
+              <li class="ingredient2" value="Green Beans"><a>Green Beans</a></li>
+              <li class="ingredient2" value="Mushrooms"><a>Mushrooms</a></li>
+              <li class="ingredient2" value="Green Onions"><a>Green Onions</a></li>
+              <li class="ingredient2" value="Tomatoes"><a>Tomatoes</a></li>
+              <!-- liquid selections -->
+              <li class="dropdown-header">Liquids</li>
+              <li class="ingredient2" value="Water"><a>Water</a></li>
+              <li class="ingredient2" value="Milk"><a>Milk</a></li>
+              <li class="ingredient2" value="Wine"><a>Wine</a></li>
+              <li class="ingredient2" value="Soy Sauce"><a>Soy Sauce</a></li>
+              <!-- dry good selections -->
+              <li class="dropdown-header">Dry Goods</li>
+              <li class="ingredient2" value="Rice"><a>Rice</a></li>
+              <li class="ingredient2" value="Pasta"><a>Pasta</a></li>
+              <li class="ingredient2" value="Grain"><a>Grain</a></li>
+              <!-- fruit selections -->
+              <li class="dropdown-header">Fruits</li>
+              <li class="ingredient2" value="Apples"><a>Apples</a></li>
+              <li class="ingredient2" value="Oranges"><a>Oranges</a></li>
+              <li class="ingredient2" value="Bananas"><a>Bananas</a></li>
+              <li class="ingredient2" value="Pears"><a>Pears</a></li>
+              <!-- bakery selections -->
+              <li class="dropdown-header">Bakery</li>
+              <li class="ingredient2" value="Rolls"><a>Rolls</a></li>
+              <li class="ingredient2" value="Sliced Bread"><a>Sliced Bread</a></li>
+              <li class="ingredient2" value="Croutons"><a>Croutons</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-4">
+          <!-- ingredient 3 -->
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span id="selected-ingredient3">Select</span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- meat selections -->
+              <li class="dropdown-header">Meat</li>
+              <li class="ingredient3" value="Beef"><a>Beef</a></li>
+              <li class="ingredient3" value="Chicken"><a>Chicken</a></li>
+              <li class="ingredient3" value="Pork"><a>Pork</a></li>
+              <!-- vegetable selections -->
+              <li class="dropdown-header">Vegetable</li>
+              <li class="ingredient3" value="Leafy Greens"><a>Leafy Greens</a></li>
+              <li class="ingredient3" value="Carrots"><a>Carrots</a></li>
+              <li class="ingredient3" value="Squash"><a>Squash</a></li>
+              <li class="ingredient3" value="Green Beans"><a>Green Beans</a></li>
+              <li class="ingredient3" value="Mushrooms"><a>Mushrooms</a></li>
+              <li class="ingredient3" value="Green Onions"><a>Green Onions</a></li>
+              <li class="ingredient3" value="Tomatoes"><a>Tomatoes</a></li>
+              <!-- liquid selections -->
+              <li class="dropdown-header">Liquids</li>
+              <li class="ingredient3" value="Water"><a>Water</a></li>
+              <li class="ingredient3" value="Milk"><a>Milk</a></li>
+              <li class="ingredient3" value="Wine"><a>Wine</a></li>
+              <li class="ingredient3" value="Soy Sauce"><a>Soy Sauce</a></li>
+              <!-- dry good selections -->
+              <li class="dropdown-header">Dry Goods</li>
+              <li class="ingredient3" value="Rice"><a>Rice</a></li>
+              <li class="ingredient3" value="Pasta"><a>Pasta</a></li>
+              <li class="ingredient3" value="Grain"><a>Grain</a></li>
+              <!-- fruit selections -->
+              <li class="dropdown-header">Fruits</li>
+              <li class="ingredient3" value="Apples"><a>Apples</a></li>
+              <li class="ingredient3" value="Oranges"><a>Oranges</a></li>
+              <li class="ingredient3" value="Bananas"><a>Bananas</a></li>
+              <li class="ingredient3" value="Pears"><a>Pears</a></li>
+              <!-- bakery selections -->
+              <li class="dropdown-header">Bakery</li>
+              <li class="ingredient3" value="Rolls"><a>Rolls</a></li>
+              <li class="ingredient3" value="Sliced Bread"><a>Sliced Bread</a></li>
+              <li class="ingredient3" value="Croutons"><a>Croutons</a></li>
+            </ul>
+          </div>
+        </div>
 
       </div>
       <!-- results -->
