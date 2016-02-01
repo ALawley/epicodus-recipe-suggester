@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="main-navbar">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-bar"></span>
@@ -42,65 +42,54 @@
       </div>
       <!-- dropdown selectors -->
       <div class="row">
-        <form id="ingredient-selectors">
-          <h2>Select Your Ingredients:</h2>
-          <div class="col-sm-4">
+        <div class="col-sm-4">
+          <h2>Hello</h2>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span class="selected-ingredient">Select an ingredient</span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" id="ingredient1">
+              <li class="dropdown-header">Meat</li>
+              <li value="Beef"><a href="#">Beef</a></li>
+              <li value="Chicken"><a href="#">Chicken</a></li>
+              <li value="Pork"><a href="#">Pork</a></li>
+              <li class="dropdown-header">Vegetable</li>
+              <li value="Leafy Greens"><a href="#">Leafy Greens</a></li>
+              <li value="Carrots"><a href="#">Carrots</a></li>
+              <li value="Squash"><a href="#">Squash</a></li>
+              <li value="Green Beans"><a href="#">Green Beans</a></li>
+              <li value="Mushrooms"><a href="#">Mushrooms</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="col-sm-6">
+          <form>
             <div class="form-group">
-              <label>Meat:</label>
-              <select class="form-control" id="meat">
+              <select class="form-control">
                 <option>Beef</option>
                 <option>Chicken</option>
                 <option>Pork</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Vegetables:</label>
-              <select class="form-control" id="vegetables">
-                <option>Spinach</option>
+                <option>Leafy Greens</option>
                 <option>Carrots</option>
-                <option>Mushrooms</option>
+                <option>Squash</option>
               </select>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="form-group">
-              <label>Liquid:</label>
-              <select class="form-control" id="liquid">
-                <option>Water</option>
-                <option>Milk</option>
-                <option>Soy Sauce</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Fruits:</label>
-              <select class="form-control" id="fruits">
-                <option>Apples</option>
-                <option>Oranges</option>
-                <option>Mushrooms</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="form-group">
-              <label>Dry Goods:</label>
-              <select class="form-control" id="dry-goods">
-                <option>Rice</option>
-                <option>Pasta</option>
-                <option>Grain</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Bakery</label>
-              <select class="form-control" id="bakery">
-                <option>Rolls</option>
-                <option>Croutons</option>
-                <option>Sliced Bread</option>
-              </select>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div> -->
+
       </div>
       <!-- results -->
+      <!-- <div class="row">
+        <div id="result-box">
+          <h2>Suggested For You:</h2>
+          <img src="http://lorempixel.com/200/200">
+          <img src="http://lorempixel.com/200/200">
+          <img src="http://lorempixel.com/200/200">
+          <img src="http://lorempixel.com/200/200">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div> -->
 
     </div>
   </body>
