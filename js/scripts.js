@@ -1,3 +1,24 @@
+var BottomShelf = function(){
+  this.ingredient1 = "";
+  this.ingredient2 = "";
+  this.chosenRecipe = {};
+  this.recipeArray = [];
+};
+
+BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
+  if (ingredient1 === "Beef" && ingredient2 === "Zucchini") {
+    return("teriyakiBeef");
+  } else if (ingredient1 === "Beef" && ingredient2 === "Mushroom") {
+    return("stroganoff");
+  } else if (ingredient1 === "Chicken" && ingredient2 === "Zucchini") {
+    return("risotto");
+  } else if (ingredient1 === "Chicken" && ingredient2 === "Mushroom") {
+    return("teriyakiChicken");
+  } else {
+    return("ratatouille");
+  }
+}
+
 var Recipe = function(img_url, publisher, publisher_url, source_url, recipeTitle, ingredient_list) {
     this.img_url = img_url;
     this.publisher = publisher;
@@ -6,6 +27,9 @@ var Recipe = function(img_url, publisher, publisher_url, source_url, recipeTitle
     this.recipeTitle = recipeTitle;
     this.ingredient_list = ingredient_list;
 };
+
+// var stroganoff = new Recipe("imgur.com/stroganoff", "food network", "foodnetwork.com/stroganoff")
+// newBottomShelf.recipeArray.push(stroganoff)
 
 $(document).ready(function() {
   //clicks on an li with a parent ul #ingredient 1
