@@ -12,11 +12,16 @@
 
 .dropdown {
   text-align: center;
+;
+}
+
+.h2-center {
+  text-align: center;
 }
 
 li.ingredient-item:hover {
   text-decoration: underline;
-  background-color: #abcdef;
+background-image: #abcdef;
 }
 
 #result-box {
@@ -34,4 +39,33 @@ li.ingredient-item:hover {
   margin: 20px;
   padding: 20px;
 
+}
+
+.recipe-display {
+  text-align: center;
+  border-width: thick;
+}
+
+.recipe-display li {
+  list-style-type: none;
+}
+ #header1 {
+border-color: green;
+}
+
+.body {
+  background-color: #E6E6E6:
+}
+
+.jumbotron {
+  background-color: #967D75;
+}
+
+.container {
+background-color: #CBF5BC;
+
+}
+
+.ingredient_list {
+  margin-right: 40px;
 }
