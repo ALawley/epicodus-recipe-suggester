@@ -10,8 +10,13 @@
   text-align: center;
 }
 
-.form-group label {
-  font-style: italic;
+.dropdown {
+  text-align: center;
+}
+
+li.ingredient-item:hover {
+  text-decoration: underline;
+  background-color: #abcdef;
 }
 
 #result-box {
@@ -19,4 +24,14 @@
   border-radius: 10px;
   padding: 10px;
   margin-top: 20px;
+}
+
+#button-div {
+  text-align: center;
+}
+
+#find-recipes {
+  margin: 20px;
+  padding: 20px;
+
 }
