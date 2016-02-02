@@ -2,7 +2,7 @@
 
 #### _{recipe finder website that helps use existing food resources}, {02-05-2016}_
 
-#### By _**{Anna, Katy, Michelle, Rob}**_
+#### By _**{Anna Lawley, Kate Hall, Michelle, Rob}**_
 
 ## Description
 
@@ -34,4 +34,4 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) 2015 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_{List of contributors or company name}_**
