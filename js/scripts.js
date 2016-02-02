@@ -1,3 +1,9 @@
+var BottomShelf = function(){
+  this.ingredient1 = "";
+  this.ingredient2 = "";
+  this.chosenRecipe = {};
+}
+
 var Recipe = function(img_url, publisher, publisher_url, source_url, recipeTitle, ingredient_list) {
     this.img_url = img_url;
     this.publisher = publisher;
