@@ -7,15 +7,20 @@ var BottomShelf = function(){
 
 BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
   if (ingredient1 === "Beef" && ingredient2 === "Zucchini") {
-    return("teriyakiBeef");
+    this.chosenRecipe = this.recipeArray[this.recipeArray.indexOf("teriyakiBeef")];
+    return "teriyakiBeef";
   } else if (ingredient1 === "Beef" && ingredient2 === "Mushrooms") {
-    return("stroganoff");
+    this.chosenRecipe = this.recipeArray[this.recipeArray.indexOf("stroganoff")];
+    return "stroganoff";
   } else if (ingredient1 === "Chicken" && ingredient2 === "Zucchini") {
-    return("risotto");
+    this.chosenRecipe = this.recipeArray[this.recipeArray.indexOf("risotto")];
+    return "risotto";
   } else if (ingredient1 === "Chicken" && ingredient2 === "Mushrooms") {
-    return("teriyakiChicken");
+    this.chosenRecipe = this.recipeArray[this.recipeArray.indexOf("teriyakiChicken")];
+    return "teriyakiChicken"
   } else {
-    return("ratatouille");
+    this.chosenRecipe = this.recipeArray[this.recipeArray.indexOf("ratatouille")];
+    return "ratatouille";
   }
 }
 
@@ -28,7 +33,7 @@ var Recipe = function(img_url, publisher, publisher_url, source_url, recipeTitle
     this.ingredient_list = ingredient_list;
 };
 
-// var teriakiBeef = new Recipe("http://hostedmedia.reimanpub.com/TOH/Images/Photos/37/300x300/exps33521_SD955952D19.jpg", "Taste of Home", "tasteofhome.com",  "http://www.tasteofhome.com/recipes/teriyaki-zucchini-and-onion", "Teriaki Beef", ["zucchini", "onion", "butter", "teriaki", "sesame seeds (optional)"])
+// var teriyakiBeef = new Recipe("http://hostedmedia.reimanpub.com/TOH/Images/Photos/37/300x300/exps33521_SD955952D19.jpg", "Taste of Home", "tasteofhome.com",  "http://www.tasteofhome.com/recipes/teriyaki-zucchini-and-onion", "Teriyaki Beef", ["zucchini", "onion", "butter", "teriaki", "sesame seeds (optional)"])
 // newBottomShelf.recipeArray.push(teriakiBeef)
 
 // var stroganoff = new Recipe("http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2012/11/12/0/FN_Paula-Deen-Beef-Stroganoff_s4x3.jpg.rend.sni12col.landscape.jpeg", "food network", "foodnetwork.com", "http://www.foodnetwork.com/recipes/paula-deen/beef-stroganoff-recipe.html", "Beef Stroganoff", ["beef", "flour", "olive oil", "butter", "onion", "mushrooms", "beef broth", "cream of mushroom", "pepper", "sour cream", "egg noodle"])
