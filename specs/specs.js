@@ -12,23 +12,23 @@ describe('BottomShelf', function() {
   });
   it("will run ingredient check and return teriyakiBeef if ingredients are beef and zucchini", function() {
     var testBottomShelf = new BottomShelf();
-    expect(testBottomShelf.ingredientCheck("beef", "zucchini")).to.equal("teriyakiBeef");
+    expect(testBottomShelf.ingredientCheck("Beef", "Zucchini")).to.equal("teriyakiBeef");
   });
-  it("will run ingredient check and return stroganoff if ingredients are beef and mushroom", function() {
+  it("will run ingredient check and return stroganoff if ingredients are beef and mushrooms", function() {
     var testBottomShelf = new BottomShelf();
-    expect(testBottomShelf.ingredientCheck("beef", "mushroom")).to.equal("stroganoff");
+    expect(testBottomShelf.ingredientCheck("Beef", "Mushrooms")).to.equal("stroganoff");
   });
   it("will run ingredient check and return risotto if ingredients are chicken and zucchini", function() {
     var testBottomShelf = new BottomShelf();
-    expect(testBottomShelf.ingredientCheck("chicken", "zucchini")).to.equal("risotto");
+    expect(testBottomShelf.ingredientCheck("Chicken", "Zucchini")).to.equal("risotto");
+  });
+  it("will run ingredient check and return teriyakiChicken if ingredients are chicken and mushrooms", function() {
+    var testBottomShelf = new BottomShelf();
+    expect(testBottomShelf.ingredientCheck("Chicken", "Mushrooms")).to.equal("teriyakiChicken");
   });
   it("will run ingredient check and return teriyakiChicken if ingredients are chicken and mushroom", function() {
     var testBottomShelf = new BottomShelf();
-    expect(testBottomShelf.ingredientCheck("chicken", "mushroom")).to.equal("teriyakiChicken");
-  });
-  it("will run ingredient check and return teriyakiChicken if ingredients are chicken and mushroom", function() {
-    var testBottomShelf = new BottomShelf();
-    expect(testBottomShelf.ingredientCheck("chicken", "mushroom")).to.equal("teriyakiChicken");
+    expect(testBottomShelf.ingredientCheck("Chicken", "Mushrooms")).to.equal("teriyakiChicken");
   });
 });
 
