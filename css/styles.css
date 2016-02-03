@@ -69,3 +69,7 @@ background-color: #CBF5BC;
 .ingredient_list {
   margin-right: 40px;
 }
+
+.recipe-display {
+  display: none;
+}
