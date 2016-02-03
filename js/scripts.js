@@ -26,7 +26,10 @@ BottomShelf.prototype.recipeAdd = function() {
 }
 
 BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
-  if (ingredient1 === "Beef" && ingredient2 === "Zucchini") {
+  if (ingredient1 === "Meat" || ingredient2 === "Veg") {
+    return false;
+  }
+  else if (ingredient1 === "Beef" && ingredient2 === "Zucchini") {
     var returnRecipe = {};
     var array = this.recipeArray;
     for (var index = 0; index < this.recipeArray.length; index +=1) {
@@ -120,19 +123,35 @@ $(document).ready(function() {
   $("#find-recipes").click(function() {
     newBottomShelf.ingredient1 = $('span#selected-ingredient1').text();
     newBottomShelf.ingredient2 = $('span#selected-ingredient2').text();
-    newBottomShelf.chosenRecipe = newBottomShelf.ingredientCheck(newBottomShelf.ingredient1, newBottomShelf.ingredient2);
-    $(".recipe-display").show();
-    $(".ingredient_list").empty();
-    $("img#recipe-image").attr("src", newBottomShelf.chosenRecipe.img_url);
-    $("#recipe-link").attr("href", newBottomShelf.chosenRecipe.source_url);
-    $("#recipe-title").text(newBottomShelf.chosenRecipe.recipeTitle);
-    $("#publisher-link").attr("href", newBottomShelf.chosenRecipe.publisher_url);
-    $("#publisher").text(newBottomShelf.chosenRecipe.publisher);
-    newBottomShelf.chosenRecipe.ingredient_list.forEach(function(ingredient) {
-      $(".ingredient_list").append("<li class='list-result'>" + ingredient + "</li>");
-    });
-    // alert(newBottomShelf.recipeArray);
-    // alert(newBottomShelf.recipeArray[1]);
-
+    if (newBottomShelf.ingredientCheck(newBottomShelf.ingredient1, newBottomShelf.ingredient2) === false) {
+      alert("Please select your ingredients!");
+      return;
+    } else {
+      newBottomShelf.chosenRecipe = newBottomShelf.ingredientCheck(newBottomShelf.ingredient1, newBottomShelf.ingredient2);
+      $(".recipe-display").show();
+      $(".ingredient_list").empty();
+      $("img#recipe-image").attr("src", newBottomShelf.chosenRecipe.img_url);
+      $("#recipe-link").attr("href", newBottomShelf.chosenRecipe.source_url);
+      $("#recipe-title").text(newBottomShelf.chosenRecipe.recipeTitle);
+      $("#publisher-link").attr("href", newBottomShelf.chosenRecipe.publisher_url);
+      $("#publisher").text(newBottomShelf.chosenRecipe.publisher);
+      newBottomShelf.chosenRecipe.ingredient_list.forEach(function(ingredient) {
+        $(".ingredient_list").append("<li class='list-result'>" + ingredient + "</li>");
+      });
+    }
   });
 });
+// }
+// newBottomShelf.chosenRecipe = newBottomShelf.ingredientCheck(newBottomShelf.ingredient1, newBottomShelf.ingredient2);
+// $(".recipe-display").show();
+// $(".ingredient_list").empty();
+// $("img#recipe-image").attr("src", newBottomShelf.chosenRecipe.img_url);
+// $("#recipe-link").attr("href", newBottomShelf.chosenRecipe.source_url);
+// $("#recipe-title").text(newBottomShelf.chosenRecipe.recipeTitle);
+// $("#publisher-link").attr("href", newBottomShelf.chosenRecipe.publisher_url);
+// $("#publisher").text(newBottomShelf.chosenRecipe.publisher);
+// newBottomShelf.chosenRecipe.ingredient_list.forEach(function(ingredient) {
+//   $(".ingredient_list").append("<li class='list-result'>" + ingredient + "</li>");
+// });
+// alert(newBottomShelf.recipeArray);
+// alert(newBottomShelf.recipeArray[1]);
