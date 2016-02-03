@@ -10,7 +10,6 @@
     <title>Recipe Suggester</title>
   </head>
   <body>
-    <!-- navbar -->
     <nav class="navbar navbar-default navbar-fixed-top" id="main-navbar">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -31,19 +30,15 @@
         </ul>
       </div>
     </nav>
-    <!-- jumbotron -->
     <div class="jumbotron">
       <h1>Bottom Shelf Chef</h1>
     </div>
-    <!-- page description -->
     <div class="container">
       <div class="row" id="page-description">
         <p>Select two ingredients from the dropdowns below and we'll recommend a recipe to use them both.</p>
       </div>
-      <!-- dropdown selectors -->
       <div class="row">
         <h2 class="h2-center">Select Your Ingredients:</h2>
-        <!-- ingredient 1 -->
         <div class="col-xs-6">
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -51,32 +46,13 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-              <!-- meat selections -->
               <li class="dropdown-header">Meat</li>
               <li class="ingredient1" value="Beef"><a>Beef</a></li>
               <li class="ingredient1" value="Chicken"><a>Chicken</a></li>
               <li class="ingredient1" value="Vegetarian"><a>Vegetarian</a></li>
-              <!-- vegetable selections -->
-              <!-- <li class="dropdown-header">Vegetable</li>
-              <li class="ingredient1" value="Squash"><a>Squash</a></li>
-              <li class="ingredient1" value="Mushrooms"><a>Mushrooms</a></li>
-              <li class="ingredient1" value="Onions"><a>Onions</a></li>
-              <!-- liquid selections -->
-              <!-- <li class="dropdown-header">Liquids</li>
-              <li class="ingredient1" value="Water"><a>Water</a></li>
-              <li class="ingredient1" value="Milk"><a>Milk</a></li>
-              <li class="ingredient1" value="Wine"><a>Wine</a></li>
-              <li class="ingredient1" value="Soy Sauce"><a>Soy Sauce</a></li> -->
-              <!-- dry good selections -->
-              <!-- <li class="dropdown-header">Dry Goods</li>
-              <li class="ingredient1" value="Rice"><a>Rice</a></li>
-              <li class="ingredient1" value="Pasta"><a>Pasta</a></li>
-              <li class="ingredient1" value="Couscous"><a>Grain</a></li> -->
-
             </ul>
           </div>
         </div>
-        <!-- ingredient 2 -->
         <div class="col-xs-6">
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -84,80 +60,14 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-              <!-- meat selections -->
-              <!-- <li class="dropdown-header">Meat</li> -->
-              <!-- <li class="ingredient2" value="Beef"><a>Beef</a></li>
-              <li class="ingredient2" value="Chicken"><a>Chicken</a></li>
-              <li class="ingredient2" value="Pork"><a>Pork</a></li> -->
-              <!-- vegetable selections -->
               <li class="dropdown-header">Vegetable</li>
               <li class="ingredient2" value="Zucchini"><a>Zucchini</a></li>
               <li class="ingredient2" value="Mushrooms"><a>Mushrooms</a></li>
-              <!-- <li class="ingredient2" value="Onions"><a>Onions</a></li> -->
-              <!-- liquid selections -->
-              <!-- <li class="dropdown-header">Liquids</li>
-              <li class="ingredient2" value="Water"><a>Water</a></li>
-              <li class="ingredient2" value="Milk"><a>Milk</a></li>
-              <li class="ingredient2" value="Wine"><a>Wine</a></li>
-              <li class="ingredient2" value="Soy Sauce"><a>Soy Sauce</a></li>
-              <!-- dry good selections -->
-              <!-- <li class="dropdown-header">Dry Goods</li>
-              <li class="ingredient2" value="Rice"><a>Rice</a></li>
-              <li class="ingredient2" value="Pasta"><a>Pasta</a></li>
-              <li class="ingredient2" value="Couscous"><a>Grain</a></li> -->
-              <!-- fruit selections -->
-              <!-- <li class="dropdown-header">Fruits</li>
-              <li class="ingredient2" value="Apples"><a>Apples</a></li> -->
-              <!-- bakery selections -->
-              <!-- <li class="dropdown-header">Bakery</li>
-              <li class="ingredient2" value="Rolls"><a>Rolls</a></li>
-              <li class="ingredient2" value="Sliced Bread"><a>Sliced Bread</a></li> -->
-            </ul>
-          </div>
-        </div>
-        <!-- ingredient 3 -->
-        <!-- <div class="col-xs-4">
-          <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <span id="selected-ingredient3">Select</span>
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <!-- meat selections -->
-              <!-- <li class="dropdown-header">Meat</li>
-              <li class="ingredient3" value="Beef"><a>Beef</a></li>
-              <li class="ingredient3" value="Chicken"><a>Chicken</a></li>
-              <li class="ingredient3" value="Pork"><a>Pork</a></li> -->
-              <!-- vegetable selections -->
-              <!-- <li class="dropdown-header">Vegetable</li>
-              <li class="ingredient3" value="Squash"><a>Squash</a></li>
-              <li class="ingredient3" value="Mushrooms"><a>Mushrooms</a></li>
-              <li class="ingredient3" value="Onions"><a>Onions</a></li>
-              <!-- liquid selections -->
-              <!-- <li class="dropdown-header">Liquids</li>
-              <li class="ingredient3" value="Water"><a>Water</a></li>
-              <li class="ingredient3" value="Milk"><a>Milk</a></li>
-              <li class="ingredient3" value="Wine"><a>Wine</a></li>
-              <li class="ingredient3" value="Soy Sauce"><a>Soy Sauce</a></li> -->
-              <!-- dry good selections -->
-              <!-- <li class="dropdown-header">Dry Goods</li>
-              <li class="ingredient3" value="Rice"><a>Rice</a></li>
-              <li class="ingredient3" value="Pasta"><a>Pasta</a></li>
-              <li class="ingredient3" value="Couscous"><a>Grain</a></li>
-              <!-- fruit selections -->
-              <!-- <li class="dropdown-header">Fruits</li>
-              <li class="ingredient3" value="Apples"><a>Apples</a></li> -->
-              <!-- bakery selections -->
-              <!-- <li class="dropdown-header">Bakery</li>
-              <li class="ingredient3" value="Rolls"><a>Rolls</a></li>
-              <li class="ingredient3" value="Sliced Bread"><a>Sliced Bread</a></li>
-            </ul>
-          </div> -->
         </div>
             </ul>
           </div>
         </div>
-        </div>
+      </div>
       <div class="row" id="button-div">
         <button id="find-recipes" class="btn">Find Recipes</button>
       </div>
@@ -169,26 +79,6 @@
         <ul class="ingredient_list">
         </ul>
       </div>
-      <!-- results -->
-      <!-- <div class="row">
-        <div id="result-box">
-          <h2>Suggested For You:</h2>
-          <img src="http://lorempixel.com/200/200">
-          <img src="http://lorempixel.com/200/200">
-          <img src="http://lorempixel.com/200/200">
-          <img src="http://lorempixel.com/200/200">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div> -->
-
-    </div>
     </div>
   </body>
 </html>
-<!-- http://www.foodnetwork.com/recipes/paula-deen/beef-stroganoff-recipe.html -->
-<!-- http://www.myrecipes.com/recipe/chicken-risotto-spring-vegetables -->
-<!-- http://farmflavor.com/fire-grilled-vegetables/ -->
-<!-- http://www.bettycrocker.com/recipes/teriyaki-chicken-stir-fry/87b85076-efa5-4acf-90e0-f84fd5bd3353 -->
-<!-- http://www.food.com/recipe/crunchy-chicken-apple-salad-sandwiches-298434 -->
-<!-- http://www.cdkitchen.com/recipes/recs/1551/Mushroom-Ratatouille84542.shtml -->
-<!-- http://www.tasteofhome.com/recipes/teriyaki-zucchini-and-onion -->
