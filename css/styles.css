@@ -3,9 +3,27 @@
 }
 
 .jumbotron h1 {
-  color: white;
+  color: #F6F6F6;
   text-align: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  /*font-family:league-gothic;*/
 }
+
+.jumbotron {
+  /*background-image: url("../img/food.jpg");*/
+  background-color: #F7CF3E;
+  /*background-size: 1247px 1225px;*/
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container {
+/*background-color: #CBF5BC;*/
+padding-bottom: 20px;
+/*padding-top: 10px;*/
+}
+
 
 #page-description p {
   text-align: center;
@@ -13,16 +31,16 @@
 
 .dropdown {
   text-align: center;
-;
-}
-
-.h2-center {
-  text-align: center;
 }
 
 li.ingredient-item:hover {
   text-decoration: underline;
 background-image: #abcdef;
+}
+
+#dropdown1 {
+  margin-top: 50px;
+  min-height: 150px;
 }
 
 #result-box {
@@ -37,9 +55,22 @@ background-image: #abcdef;
 }
 
 #find-recipes {
-  margin: 20px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
 
+}
+
+#instruction-text {
+  /*color: #F6F6F6;
+  border: 2px solid #73AD21;
+  border-radius: 20px;
+  background: #73AD21;
+  padding: 20px;*/
+
+}
+
+#rocketpitch {
+  text-align: left;
 }
 
 .recipe-display {
@@ -50,25 +81,19 @@ background-image: #abcdef;
 .recipe-display li {
   list-style-type: none;
 }
+
+#recipe-image {
+
+}
+
  #header1 {
-border-color: green;
+/*border-color: green;*/
 }
 
 .body {
-  background-color: #E6E6E6:
+  /*background-color: #E6E6E6:*/
 }
 
-.jumbotron {
-  background-image: url("../img/food.jpg");
-  background-size: 1247px 225px;
-  background-repeat: no-repeat;
-}
-
-.container {
-background-color: #CBF5BC;
-padding-bottom: 20px;
-padding-top: 10px;
-}
 
 .ingredient_list {
   margin-right: 40px;
