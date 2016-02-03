@@ -2,27 +2,58 @@
   padding-right: 30px;
 }
 
-.jumbotron h1 {
-  color: white;
+/*.jumbotron h1 {
+  color: #F6F6F6;
   text-align: center;
+  margin-top: 75px;
+  margin-bottom: 5px;
+  /*font-family:league-gothic;*/
+
+
+.jumbotronText {
+  color: #F6F6F6;
+  text-align: justify;
+  text-shadow: 2px 2px #626262;
+  margin-top: 7%;
+  margin-left: 2%;
+  margin-right: 10%;
+
 }
 
-#page-description p {
-  text-align: center;
+.jumbotron {
+  background-image: url("../img/strawberries5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 30%;
+  /*border-bottom: 8px solid red;*/
 }
+
+.container {
+/*background-color: #CBF5BC;*/
+padding-bottom: 20px;
+/*padding-top: 10px;*/
+}
+
 
 .dropdown {
   text-align: center;
-;
 }
 
-.h2-center {
-  text-align: center;
+#rocketPitch {
+  text-align: left;
 }
 
 li.ingredient-item:hover {
   text-decoration: underline;
 background-image: #abcdef;
+}
+
+#dropdown1 {
+  margin-top: 50px;
+  min-height: 150px;
 }
 
 #result-box {
@@ -37,8 +68,17 @@ background-image: #abcdef;
 }
 
 #find-recipes {
-  margin: 20px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 10px 25px 10px 25px;
+
+}
+
+#instruction-text {
+  /*color: #F6F6F6;
+  border: 2px solid #73AD21;
+  border-radius: 20px;
+  background: #73AD21;
+  padding: 20px;*/
 
 }
 
@@ -50,25 +90,19 @@ background-image: #abcdef;
 .recipe-display li {
   list-style-type: none;
 }
+
+#recipe-image {
+
+}
+
  #header1 {
-border-color: green;
+/*border-color: green;*/
 }
 
 .body {
-  background-color: #E6E6E6:
+  /*background-color: #E6E6E6:*/
 }
 
-.jumbotron {
-  background-image: url("../img/food.jpg");
-  background-size: 1247px 225px;
-  background-repeat: no-repeat;
-}
-
-.container {
-background-color: #CBF5BC;
-padding-bottom: 20px;
-padding-top: 10px;
-}
 
 .ingredient_list {
   margin-right: 40px;
@@ -76,4 +110,8 @@ padding-top: 10px;
 
 .recipe-display {
   display: none;
+}
+
+.center {
+  text-align: center;
 }

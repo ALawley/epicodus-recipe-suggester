@@ -10,50 +10,79 @@
     <title>Recipe Suggester</title>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top" id="main-navbar">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Home</a>
-      </div>
+    <div class="navbar">
+      <nav class="navbar navbar-default navbar-fixed-top" id="main-navbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
 
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#pantry.html">Pantry Tips</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="pantry.html">Pantry Tips</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="jumbotron">
-      <h1>Bottom Shelf Chef</h1>
+      <div class="jumbotronText">
+        <h1>Bottom Shelf Chef</h1>
+        <h3>Save your Wallet . . . &nbsp; and the World</h3>
+      </div>
     </div>
     <div class="container">
+
       <div class="row" id="page-description">
-        <p>Select two ingredients from the dropdowns below and we'll recommend a recipe to use them both.</p>
-      </div>
-      <div class="row">
-        <h2 class="h2-center">Select Your Ingredients:</h2>
-        <div class="col-xs-6">
-          <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <span id="selected-ingredient1">Meat</span>
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">Meat</li>
-              <li class="ingredient1" value="Beef"><a>Beef</a></li>
-              <li class="ingredient1" value="Chicken"><a>Chicken</a></li>
-              <li class="ingredient1" value="Vegetarian"><a>Vegetarian</a></li>
-            </ul>
-          </div>
+        <div class="col-xs-4">
+          <img id="instruction-text" class="img-responsive" src="img/unitedagainst.jpeg"/>
         </div>
-        <div class="col-xs-6">
+        <div id="rocketPitch" class="col-xs-8">
+          <h4>Save hundreds of dollars while saving the planet.</h4>
+          <p>We thought this sounded good.  So we built you a site that reduces the risk of youur groceries wasting away and puts dollars back in your pocket.  </p>
+          <h4>How does it work?</h4>
+          <p>Sound good?  We thought so.  So we built a site that reduces the risk of groceries wasting away putting dollars back in your pocket.  </p>
+          <h4>Ready to Start?</h4>
+          <p>Sound good?  We thought so.  So we built a site that reduces the risk of groceries wasting away putting dollars back in your pocket.  </p>
+        </div>
+      </div>
+      <div class="row" id="title-recipe-block">
+        <div class="col-xs-4">
+          <h3 class="center">Select Your Ingredients:</h3>
+        </div>
+        <div class="col-xs-4">
+          <div id="button-div">
+          <button id="find-recipes" class="btn">Find Recipes</button>
+        </div>
+      </div>
+        <div class="col-xs-4">
+          <h2></h2>
+        </div>
+      </div>
+
+      <div class="row" id="recipe-block">
+        <div class="col-xs-4">
+          <div class="row" id="dropdown1">
+          <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span id="selected-ingredient1">Select</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Meat</li>
+            <li class="ingredient1" value="Beef"><a>Beef</a></li>
+            <li class="ingredient1" value="Chicken"><a>Chicken</a></li>
+            <li class="ingredient1" value="Vegetarian"><a>Vegetarian</a></li>
+          </ul>
+          </div>
+          </div>
+          <div class="row" id="dropdown2">
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               <span id="selected-ingredient2">Veg</span>
@@ -63,22 +92,28 @@
               <li class="dropdown-header">Vegetable</li>
               <li class="ingredient2" value="Zucchini"><a>Zucchini</a></li>
               <li class="ingredient2" value="Mushrooms"><a>Mushrooms</a></li>
-        </div>
             </ul>
           </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="recipe-display">
+              <img id="recipe-image" class="img-responsive" src="">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="recipe-display">
+            <a id="recipe-link" href="" target="_blank"><h3 id="recipe-title"></h3></a>
+            <a id="publisher-link" href="" target="_blank"><h5 id="publisher"></h5></a>
+            <span id="header1"><h5>Ingredients:</h5>  </span>
+            <ul class="ingredient_list">
+            </ul>
+           </div>
         </div>
       </div>
-      <div class="row" id="button-div">
-        <button id="find-recipes" class="btn">Find Recipes</button>
-      </div>
-      <div class="recipe-display">
-        <img id="recipe-image" src="">
-        <a id="recipe-link" href="" target="_blank"><h3 id="recipe-title"></h3></a>
-        <a id="publisher-link" href="" target="_blank"><h5 id="publisher"></h5></a>
-        <span id="header1"><h5>Ingredients:</h5>  </span>
-        <ul class="ingredient_list">
-        </ul>
-      </div>
     </div>
+    <!-- <footer>
+      <p>Copyright 2016 - Anna Lawley, Kate Hall, Michelle Brecunier, Rob Reasoner -  Powered by Food2Fork.com.
+    </footer> -->
   </body>
 </html>
