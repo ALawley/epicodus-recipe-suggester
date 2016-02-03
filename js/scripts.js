@@ -109,6 +109,7 @@ $(document).ready(function() {
     newBottomShelf.ingredient2 = $('span#selected-ingredient2').text();
     newBottomShelf.chosenRecipe = newBottomShelf.ingredientCheck(newBottomShelf.ingredient1, newBottomShelf.ingredient2);
     $(".recipe-display").show();
+    $(".ingredient_list").empty();
     $("img#recipe-image").attr("src", newBottomShelf.chosenRecipe.img_url);
     $("#recipe-link").attr("href", newBottomShelf.chosenRecipe.source_url);
     $("#recipe-title").text(newBottomShelf.chosenRecipe.recipeTitle);
