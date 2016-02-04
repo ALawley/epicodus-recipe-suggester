@@ -40,9 +40,8 @@ ul.navbar-right {
   background-image: url("../img/spices3.jpg");
 }
 
-#jumbotron-recipes {
-  background-image: url("../img/greenbeans2.jpg");
-  background-size: 100% auto;
+#jumbotron-about {
+  background-image: url("../img/kitchenpot2.jpg");
 }
 
 .container {
