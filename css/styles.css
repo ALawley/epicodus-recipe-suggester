@@ -2,14 +2,6 @@
   padding-right: 30px;
 }
 
-/*.jumbotron h1 {
-  color: #F6F6F6;
-  text-align: center;
-  margin-top: 75px;
-  margin-bottom: 5px;
-  /*font-family:league-gothic;*/
-
-
 .jumbotron-text {
   color: #F6F6F6;
   text-align: justify;
@@ -38,14 +30,16 @@
   margin-right: 3%;
   height: 25%;
 }
+
 .container {
-/*background-color: #CBF5BC;*/
 padding-bottom: 20px;
-/*padding-top: 10px;*/
 }
 
-
 .dropdown {
+  text-align: center;
+}
+
+.center {
   text-align: center;
 }
 
@@ -53,76 +47,23 @@ padding-bottom: 20px;
   text-align: left;
 }
 
-li.ingredient-item:hover {
-  text-decoration: underline;
-background-image: #abcdef;
-}
-
-#dropdown1 {
-  margin-top: 50px;
-  min-height: 150px;
-}
-
-#result-box {
-  border: solid black 1px;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-#button-div {
-  text-align: center;
-}
-
 #find-recipes {
   margin-top: 20px;
   padding: 10px 25px 10px 25px;
-
-}
-
-#instruction-text {
-  /*color: #F6F6F6;
-  border: 2px solid #73AD21;
-  border-radius: 20px;
-  background: #73AD21;
-  padding: 20px;*/
-
 }
 
 .recipe-display {
   text-align: center;
-  border-width: thick;
 }
 
 .recipe-display li {
   list-style-type: none;
 }
 
-#recipe-image {
-
-}
-
- #header1 {
-/*border-color: green;*/
-}
-
-.body {
-  /*background-color: #E6E6E6:*/
-}
-
-
 .ingredient_list {
   margin-right: 40px;
 }
 
-.recipe-display {
-  display: none;
-}
-
-.center {
-  text-align: center;
-}
-
-.select-reminder {
+.recipe-display, .select-reminder {
   display: none;
 }
