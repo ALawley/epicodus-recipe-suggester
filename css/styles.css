@@ -20,7 +20,7 @@
 
 }
 
-.jumbotron {
+#jumbotron-main {
   background-image: url("../img/strawberries5.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -31,6 +31,10 @@
   /*border-bottom: 8px solid red;*/
 }
 
+#jumbotron_pantry {
+  background-image: url("../img/food-spoon-honey.jpg");
+
+}
 .container {
 /*background-color: #CBF5BC;*/
 padding-bottom: 20px;
