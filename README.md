@@ -1,38 +1,38 @@
 # _BOTTOM SHELF CHEF_
 
-#### _{recipe finder website that helps use existing food resources}, {02-05-2016}_
+#### _End of intro class group project for Epicodus, 2.5.16_
 
-#### By _**{Anna Lawley, Kate Hall, Michelle, Rob Reasoner}**_
+#### By _**Anna Lawley, Kate Hall, Michelle Brecunier, Rob Reasoner**_
 
 ## Description
 
-_{This website was developed to aid endusers in the creation of meals utilizing existing food resources on hand before spoilage. In addition, a shopping list will be generated once the suggested recipe has been selected which could be put to print or sent mobile. This will save the enduser time and money in considering that all important question: "What is for dinner tonight?"}_
+_This website will allow the user to input ingredients that they have on hand and the site will return recipe suggestions, allowing for easy meal planning to prevent food spoilage and waste. We currently have a working prototype with a small number of pre-stocked ingredients and recipes, and are looking to eventually expand it to use an API to let the user dynamically search from a wide array of ingredients._
 
 ## Setup/Installation Requirements
 
-* _From Github page, clone repositiory and open the index.html _
-* _
+* _Clone this repository_
+* _Open index.html in the modern web browser of your choice._
 
-_
 ## Known Bugs
 
-_There are  no known bugs._
+_No known bugs._
+
+## Planned Features
+
+* _Connect the page to a recipe search API to enable supporting a much wider array of ingredients._
 
 ## Support and contact details
 
-_ _
+_Leave a comment or open a ticket on GitHub._
 
 ## Technologies Used
 
-_
-HTML
-CSS
-Javascript
-
-_
+* _JavaScript_
+* _CSS_
+* _BootStrap_
 
 ### License
 
-*MIT License .*
+_Licensed under the MIT License._
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_{Anna Lawley, Kate Hall, Michelle Brecunier, Rob Reasoner}_**
