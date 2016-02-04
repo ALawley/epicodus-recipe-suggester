@@ -73,6 +73,10 @@ padding-bottom: 20px;
   margin-right: 40px;
 }
 
+#recipe-image {
+  margin-top: 40px;
+}
+
 .recipe-display, .select-reminder {
   display: none;
 }
