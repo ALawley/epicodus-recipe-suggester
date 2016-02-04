@@ -23,8 +23,7 @@ ul.navbar-right {
   margin-right: 10%;
 }
 
-#jumbotron-main {
-  background-image: url("../img/strawberries5.jpg");
+.jumbotron {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -32,15 +31,12 @@ ul.navbar-right {
   margin-right: 3%;
   height: 30%;
 }
+#jumbotron-main {
+  background-image: url("../img/strawberries5.jpg");
+}
 
 #jumbotron_pantry {
-  background-image: url("../img/spices2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: bottom;
-  margin-left: 3%;
-  margin-right: 3%;
-  height: 25%;
+  background-image: url("../img/spices3.jpg");
 }
 
 .container {
