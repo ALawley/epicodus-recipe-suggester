@@ -6,33 +6,35 @@
 
 ## Description
 
-_This website will allow the user to input ingredients that they have on hand and the site will return recipe suggestions, allowing for easy meal planning to prevent food spoilage and waste. We currently have a working prototype with a small number of pre-stocked ingredients and recipes, and are looking to eventually expand it to use an API to let the user dynamically search from a wide array of ingredients._
+_Bottom Shelf Chef will allow a user to input a few ingredients they have on hand and wish to use up, and the page will return recipe suggestions for using the input ingredients. Currently we have a working prototype with a small selection of pre-stocked ingredients and recipes, however we plan to add an API to allow the user to search a wide array of recipes for a large variety of ingredients._
+
 
 ## Setup/Installation Requirements
 
 * _Clone this repository_
-* _Open index.html in the modern web browser of your choice._
+* _Open index.html in a modern web browser of your choice._
 
 ## Known Bugs
 
-_No known bugs._
+_No current known bugs._
 
 ## Planned Features
 
-* _Connect the page to a recipe search API to enable supporting a much wider array of ingredients._
+* _Query recipes through a recipe search API._
+* _Expand list of ingredients to allow greater flexibility in searches._
 
 ## Support and contact details
 
-_Leave a comment or open a ticket on GitHub._
+_Leave a comment or open a ticket on GitHub_
 
 ## Technologies Used
 
 * _JavaScript_
 * _CSS_
-* _BootStrap_
+* _Bootstrap_
 
 ### License
 
-_Licensed under the MIT License._
+*Licensed under the MIT License*
 
-Copyright (c) 2016 **_{Anna Lawley, Kate Hall, Michelle Brecunier, Rob Reasoner}_**
+Copyright (c) 2016 **_Anna Lawley, Kate Hall, Michelle Brecunier, Rob Reasoner_**
