@@ -18,9 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Home</a>
         </div>
-
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.html">Home</a></li>
@@ -31,6 +29,7 @@
         </div>
       </nav>
     </div>
+
     <div class="jumbotron">
       <div class="jumbotronText">
         <h1>Bottom Shelf Chef</h1>
@@ -75,7 +74,6 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
-            <li class="dropdown-header">Meat</li>
             <li class="ingredient1" value="Beef"><a>Beef</a></li>
             <li class="ingredient1" value="Chicken"><a>Chicken</a></li>
             <li class="ingredient1" value="Vegetarian"><a>Vegetarian</a></li>
@@ -85,30 +83,32 @@
           <div class="row" id="dropdown2">
           <div class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <span id="selected-ingredient2">Veg</span>
+              <span id="selected-ingredient2">Select</span>
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-              <li class="dropdown-header">Vegetable</li>
               <li class="ingredient2" value="Zucchini"><a>Zucchini</a></li>
               <li class="ingredient2" value="Mushrooms"><a>Mushrooms</a></li>
             </ul>
           </div>
           </div>
         </div>
-        <div class="col-xs-4">
-            <div class="recipe-display">
-              <img id="recipe-image" class="img-responsive" src="">
-            </div>
-        </div>
-        <div class="col-xs-4">
-            <div class="recipe-display">
+        <div class="recipe-display">
+          <div class="col-xs-4">
+            <img id="recipe-image" class="img-responsive" src="">
+          </div>
+          <div class="col-xs-4">
             <a id="recipe-link" href="" target="_blank"><h3 id="recipe-title"></h3></a>
             <a id="publisher-link" href="" target="_blank"><h5 id="publisher"></h5></a>
             <span id="header1"><h5>Ingredients:</h5>  </span>
             <ul class="ingredient_list">
             </ul>
-           </div>
+          </div>
+        </div>
+        <div class="select-reminder">
+          <div class="col-xs-8">
+            <h3>Please select your ingredients!</h3>
+          </div>
         </div>
       </div>
     </div>
