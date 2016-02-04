@@ -91,7 +91,6 @@ BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
   } else {}
 }
 
-
 var Recipe = function(img_url, publisher, publisher_url, source_url, recipeTitle, ingredient_list) {
     this.img_url = img_url;
     this.publisher = publisher;
@@ -129,9 +128,6 @@ $(document).ready(function() {
   var newBottomShelf = new BottomShelf();
   newBottomShelf.recipeAdd();
 
-  //clicks on an li with a parent ul #ingredient 1
-    //we take the value of that li
-    //put the value into span class selected-ingredient
   $('.ingredient1').click(function() {
     $('span#selected-ingredient1').text($(this).attr('value'));
   });
@@ -140,9 +136,6 @@ $(document).ready(function() {
     $('span#selected-ingredient2').text($(this).attr('value'));
   });
 
-  // $('.ingredient3').click(function() {
-  //   $('span#selected-ingredient3').text($(this).attr('value'));
-  // });
   $("#find-recipes").click(function() {
     newBottomShelf.ingredient1 = $('span#selected-ingredient1').text();
     newBottomShelf.ingredient2 = $('span#selected-ingredient2').text();
@@ -151,17 +144,3 @@ $(document).ready(function() {
     } else {}
   });
 });
-// }
-// newBottomShelf.chosenRecipe = newBottomShelf.ingredientCheck(newBottomShelf.ingredient1, newBottomShelf.ingredient2);
-// $(".recipe-display").show();
-// $(".ingredient_list").empty();
-// $("img#recipe-image").attr("src", newBottomShelf.chosenRecipe.img_url);
-// $("#recipe-link").attr("href", newBottomShelf.chosenRecipe.source_url);
-// $("#recipe-title").text(newBottomShelf.chosenRecipe.recipeTitle);
-// $("#publisher-link").attr("href", newBottomShelf.chosenRecipe.publisher_url);
-// $("#publisher").text(newBottomShelf.chosenRecipe.publisher);
-// newBottomShelf.chosenRecipe.ingredient_list.forEach(function(ingredient) {
-//   $(".ingredient_list").append("<li class='list-result'>" + ingredient + "</li>");
-// });
-// alert(newBottomShelf.recipeArray);
-// alert(newBottomShelf.recipeArray[1]);
