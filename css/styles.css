@@ -31,12 +31,18 @@ ul.navbar-right {
   margin-right: 3%;
   height: 30%;
 }
+
 #jumbotron-main {
   background-image: url("../img/strawberries5.jpg");
 }
 
-#jumbotron_pantry {
+#jumbotron-pantry {
   background-image: url("../img/spices3.jpg");
+}
+
+#jumbotron-recipes {
+  background-image: url("../img/greenbeans2.jpg");
+  background-size: 100% auto;
 }
 
 .container {
