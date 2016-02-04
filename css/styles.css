@@ -10,14 +10,13 @@
   /*font-family:league-gothic;*/
 
 
-.jumbotronText {
+.jumbotron-text {
   color: #F6F6F6;
   text-align: justify;
   text-shadow: 2px 2px #626262;
   margin-top: 7%;
   margin-left: 2%;
   margin-right: 10%;
-
 }
 
 #jumbotron-main {
@@ -28,12 +27,16 @@
   margin-left: 3%;
   margin-right: 3%;
   height: 30%;
-  /*border-bottom: 8px solid red;*/
 }
 
 #jumbotron_pantry {
-  background-image: url("../img/food-spoon-honey.jpg");
-
+  background-image: url("../img/spices2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 25%;
 }
 .container {
 /*background-color: #CBF5BC;*/
