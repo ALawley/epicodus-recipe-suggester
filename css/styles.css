@@ -2,6 +2,18 @@
   padding-right: 30px;
 }
 
+.navbar {
+  background-color: #232323;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #B7B7B7;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: white;
+}
+
 .jumbotron-text {
   color: #F6F6F6;
   text-align: justify;
