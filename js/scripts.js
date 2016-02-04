@@ -103,7 +103,7 @@ var Recipe = function(img_url, publisher, publisher_url, source_url, recipeTitle
 
 var checkInputs = function(newBottomShelf) {
   if (newBottomShelf.ingredientCheck(newBottomShelf.ingredient1, newBottomShelf.ingredient2) === false) {
-    alert("Please select your ingredients!");
+    $(".select-reminder").show();
     return false;
   } else {
     return true;
@@ -112,6 +112,7 @@ var checkInputs = function(newBottomShelf) {
 
 var displayRecipe = function(newBottomShelf) {
   newBottomShelf.chosenRecipe = newBottomShelf.ingredientCheck(newBottomShelf.ingredient1, newBottomShelf.ingredient2);
+  $(".select-reminder").hide();
   $(".recipe-display").show();
   $(".ingredient_list").empty();
   $("img#recipe-image").attr("src", newBottomShelf.chosenRecipe.img_url);
@@ -147,7 +148,7 @@ $(document).ready(function() {
     newBottomShelf.ingredient2 = $('span#selected-ingredient2').text();
     if (checkInputs(newBottomShelf)) {
       displayRecipe(newBottomShelf);
-    }
+    } else {}
   });
 });
 // }
