@@ -94,6 +94,7 @@ padding-bottom: 20px;
   display: none;
 }
 
+
 #ingredient-select-block {
   background-color: #F0F3D9;
   padding-top: 5px;
@@ -124,6 +125,18 @@ body {
 .footer p {
   padding-left: 5%;
   font-style: italic;
+}
+
+#logo {
+  padding-left: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #logo {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
