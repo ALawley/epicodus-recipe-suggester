@@ -32,7 +32,7 @@ BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
   else if (ingredient1 === "Beef" && ingredient2 === "Zucchini") {
     var returnRecipe = {};
     var array = this.recipeArray;
-    for (var index = 0; index < this.recipeArray.length; index +=1) {
+    for (var index = 0; index < array.length; index +=1) {
       if (array[index].recipeTitle === "Beef and Vegetable Shish Kebabs") {
       returnRecipe = array[index]
       return returnRecipe;
@@ -41,7 +41,7 @@ BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
   } else if (ingredient1 === "Beef" && ingredient2 === "Mushrooms") {
     var returnRecipe = {};
     var array = this.recipeArray;
-    for (var index = 0; index < this.recipeArray.length; index +=1) {
+    for (var index = 0; index < array.length; index +=1) {
       if (array[index].recipeTitle === "Quick Beef Bourguignonne") {
       returnRecipe = array[index]
 
@@ -51,7 +51,7 @@ BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
   } else if (ingredient1 === "Chicken" && ingredient2 === "Zucchini") {
     var returnRecipe = {};
     var array = this.recipeArray;
-    for (var index = 0; index < this.recipeArray.length; index +=1) {
+    for (var index = 0; index < array.length; index +=1) {
       if (array[index].recipeTitle === "Chicken Breasts with Zucchini Pappardelle") {
       returnRecipe = array[index]
 
@@ -61,7 +61,7 @@ BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
   } else if (ingredient1 === "Chicken" && ingredient2 === "Mushrooms") {
     var returnRecipe = {};
     var array = this.recipeArray;
-    for (var index = 0; index < this.recipeArray.length; index +=1) {
+    for (var index = 0; index < array.length; index +=1) {
       if (array[index].recipeTitle === "Chicken Marsala") {
       returnRecipe = array[index]
 
@@ -71,7 +71,7 @@ BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
   } else if (ingredient1 === "Vegetarian" && ingredient2 === "Zucchini"){
     var returnRecipe = {};
     var array = this.recipeArray;
-    for (var index = 0; index < this.recipeArray.length; index +=1) {
+    for (var index = 0; index < array.length; index +=1) {
       if (array[index].recipeTitle === "Kolokythokeftedes (Zucchini and Feta Balls)") {
       returnRecipe = array[index]
 
@@ -81,7 +81,7 @@ BottomShelf.prototype.ingredientCheck = function(ingredient1, ingredient2) {
   } else if (ingredient1 === "Vegetarian" && ingredient2 === "Mushrooms"){
     var returnRecipe = {};
     var array = this.recipeArray;
-    for (var index = 0; index < this.recipeArray.length; index +=1) {
+    for (var index = 0; index < array.length; index +=1) {
       if (array[index].recipeTitle === "Warm Mushroom, Roasted Asparagus and Wild Rice Salad with Feta") {
       returnRecipe = array[index]
 
