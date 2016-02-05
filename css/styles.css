@@ -97,7 +97,13 @@ padding-bottom: 20px;
   display: none;
 }
 
+#annaLawley, #michelleBrecunier, #kateHall{
+  margin-bottom: 20px;
+}
 
+#about-intro {
+  margin-bottom: 30px;
+}
 #ingredient-select-block {
   background-color: #F0F3D9;
   margin-top: 20px;
