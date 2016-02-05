@@ -66,8 +66,8 @@ padding-bottom: 20px;
   padding: 10px 25px 10px 25px;
 }
 
-.recipe-display {
-  text-align: center;
+#recipe-image, #recipe-title, #publisher, #ingredients {
+  text-align: justify;
 }
 
 .recipe-display li {
@@ -75,7 +75,8 @@ padding-bottom: 20px;
 }
 
 .ingredient_list {
-  margin-right: 40px;
+  text-align: justify;
+  padding-left: 10px;
 }
 
 #recipe-image {
@@ -84,4 +85,16 @@ padding-bottom: 20px;
 
 .recipe-display, .select-reminder {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  #recipe-image, #recipe-title, #publisher, #ingredients, #recipe-image {
+    text-align: center;
+  }
+
 }
