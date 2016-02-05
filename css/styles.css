@@ -74,7 +74,7 @@ padding-bottom: 20px;
 }
 
 #recipe-image, #recipe-title, #publisher, #ingredients {
-  text-align: justify;
+  text-align: left;
 }
 
 .recipe-display li {
@@ -82,7 +82,7 @@ padding-bottom: 20px;
 }
 
 .ingredient_list {
-  text-align: justify;
+  text-align: left;
   padding-left: 10px;
 }
 
@@ -97,6 +97,7 @@ padding-bottom: 20px;
 
 #ingredient-select-block {
   background-color: #F0F3D9;
+  margin-top: 20px;
   padding-top: 5px;
   padding-bottom: 20px;
   border-radius: 15px;
