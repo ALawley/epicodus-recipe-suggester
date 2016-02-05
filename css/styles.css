@@ -85,3 +85,11 @@ padding-bottom: 20px;
 .recipe-display, .select-reminder {
   display: none;
 }
+
+#annaLawley, #michelleBrecunier, #kateHall{
+  margin-bottom: 20px;
+}
+
+#about-intro {
+  margin-bottom: 30px;
+}
