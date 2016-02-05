@@ -94,6 +94,13 @@ padding-bottom: 20px;
   display: none;
 }
 
+#ingredient-select-block {
+  background-color: #F0F3D9;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
